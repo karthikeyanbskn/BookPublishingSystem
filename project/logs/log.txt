@@ -2937,3 +2937,182 @@ Using default security password: 0752d5c4-b119-4896-b07e-fca055a2ff88
 2017-07-03 11:29:21.174  INFO 7236 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-07-03 11:29:21.193  INFO 7236 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-07-03 11:29:21.265  INFO 7236 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2017-07-03 11:33:56.634  INFO 2432 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 2432 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:33:56.637  INFO 2432 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:33:56.771  INFO 2432 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54951f15: startup date [Mon Jul 03 11:33:56 IST 2017]; root of context hierarchy
+2017-07-03 11:34:01.994  INFO 2432 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-03 11:34:02.045  INFO 2432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:34:02.047  INFO 2432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:34:02.682  INFO 2432 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:34:02.693  INFO 2432 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:34:02.703  INFO 2432 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5939 ms
+2017-07-03 11:34:03.118  INFO 2432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:34:03.118  INFO 2432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:34:03.119  INFO 2432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:34:03.126  INFO 2432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:34:03.127  INFO 2432 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:34:03.128  INFO 2432 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:34:03.776  INFO 2432 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:34:04.211  WARN 2432 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/booksdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Unknown database 'booksdb'
+2017-07-03 11:34:04.214  INFO 2432 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-03 11:34:04.242  INFO 2432 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-03 11:34:04.257 ERROR 2432 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/booksdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Unknown database 'booksdb'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.example.ProjectApplication.main(ProjectApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/booksdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Unknown database 'booksdb'
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:302) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnection(DriverDataSource.java:261) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 23 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'booksdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2194) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:299) ~[flyway-core-3.2.1.jar:na]
+	... 30 common frames omitted
+
+2017-07-03 11:35:53.430  INFO 7160 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 7160 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:35:53.432  INFO 7160 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:35:53.581  INFO 7160 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1aa9cfe2: startup date [Mon Jul 03 11:35:53 IST 2017]; root of context hierarchy
+2017-07-03 11:35:58.992  INFO 7160 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-03 11:35:59.040  INFO 7160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:35:59.043  INFO 7160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:35:59.719  INFO 7160 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:35:59.730  INFO 7160 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:35:59.738  INFO 7160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6162 ms
+2017-07-03 11:36:00.228  INFO 7160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:36:00.229  INFO 7160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:36:00.230  INFO 7160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:36:00.240  INFO 7160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:36:00.244  INFO 7160 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:36:00.245  INFO 7160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:36:01.005  INFO 7160 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:36:01.883  INFO 7160 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/booksdb?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-03 11:36:02.090  INFO 7160 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.109s)
+2017-07-03 11:36:02.239  INFO 7160 --- [restartedMain] o.f.c.i.metadatatable.MetaDataTableImpl  : Creating Metadata table: `booksdb`.`schema_version`
+2017-07-03 11:37:09.318  INFO 1616 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 1616 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:37:09.322  INFO 1616 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:37:09.472  INFO 1616 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9f3543: startup date [Mon Jul 03 11:37:09 IST 2017]; root of context hierarchy
+2017-07-03 11:37:14.727  INFO 1616 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-03 11:37:14.776  INFO 1616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:37:14.779  INFO 1616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:37:15.531  INFO 1616 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:37:15.550  INFO 1616 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:37:15.563  INFO 1616 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6109 ms
+2017-07-03 11:37:16.019  INFO 1616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:37:16.027  INFO 1616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:37:16.028  INFO 1616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:37:16.035  INFO 1616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:37:16.044  INFO 1616 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:37:16.045  INFO 1616 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:37:17.297  INFO 1616 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:37:17.782  INFO 1616 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/bookdb?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-03 11:37:17.839  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.029s)
+2017-07-03 11:37:17.888  INFO 1616 --- [restartedMain] o.f.c.i.metadatatable.MetaDataTableImpl  : Creating Metadata table: `bookdb`.`schema_version`
+2017-07-03 11:37:20.030  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `bookdb`: << Empty Schema >>
+2017-07-03 11:37:20.038  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookdb` to version 1 - create user
+2017-07-03 11:37:20.492  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookdb` to version 2 - create book
+2017-07-03 11:37:20.966  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookdb` to version 3 - create order
+2017-07-03 11:37:21.394  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookdb` to version 4 - create order items
+2017-07-03 11:37:21.944  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookdb` to version 5 - create role
+2017-07-03 11:37:22.494  INFO 1616 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema `bookdb` (execution time 00:04.608s).
+2017-07-03 11:37:22.946  INFO 1616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-03 11:37:22.980  INFO 1616 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-03 11:37:23.272  INFO 1616 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-03 11:37:23.276  INFO 1616 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-03 11:37:23.286  INFO 1616 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-03 11:37:23.374  INFO 1616 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-03 11:37:23.737  INFO 1616 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-07-03 11:37:24.774  INFO 1616 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-03 11:37:26.171  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9f3543: startup date [Mon Jul 03 11:37:09 IST 2017]; root of context hierarchy
+2017-07-03 11:37:26.385  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/register],methods=[POST]}" onto public java.lang.String com.example.controller.AuthController.register(com.example.form.RegistrationForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession) throws java.lang.Exception
+2017-07-03 11:37:26.399  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/logout],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.logout(javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.410  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/register],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.showRegsiter()
+2017-07-03 11:37:26.421  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/login],methods=[POST]}" onto public java.lang.String com.example.controller.AuthController.login(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.422  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/login],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.login()
+2017-07-03 11:37:26.434  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET]}" onto public java.lang.String com.example.controller.BookController.list(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.434  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books/{id}],methods=[GET]}" onto public java.lang.String com.example.controller.BookController.show(java.lang.Long,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.436  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.controller.HomeController.showHome()
+2017-07-03 11:37:26.441  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.list(org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.442  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/save],methods=[POST]}" onto public java.lang.String com.example.controller.OrderController.save(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.443  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/updateStatus],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.updateStatus(java.lang.Long,java.lang.String)
+2017-07-03 11:37:26.444  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/myorders],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.myOrders(org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.445  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/cart],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.cart()
+2017-07-03 11:37:26.464  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/list],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.list(javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.465  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/emptycart],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.emptyCartid(javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.465  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/addToCart],methods=[POST]}" onto public java.lang.String com.example.controller.OrderItemController.addToCart(java.lang.Long,java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.466  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/remove],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.removeItemFromCart(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.468  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.list(javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.469  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.show(java.lang.Long,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:37:26.474  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-03 11:37:26.475  INFO 1616 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-03 11:37:26.565  INFO 1616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:37:26.580  INFO 1616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:37:26.739  INFO 1616 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:37:27.317  INFO 1616 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 3bab1f50-d74a-4e49-86b9-d39647ac9670
+
+2017-07-03 11:37:27.461  INFO 1616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-07-03 11:37:27.684  INFO 1616 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@27f52eb, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d0ae593, org.springframework.security.web.context.SecurityContextPersistenceFilter@79fa8a4d, org.springframework.security.web.header.HeaderWriterFilter@44d8dee, org.springframework.security.web.csrf.CsrfFilter@979a31c, org.springframework.security.web.authentication.logout.LogoutFilter@8c3487e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30d849a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ed75f2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f18def4, org.springframework.security.web.session.SessionManagementFilter@54517f8, org.springframework.security.web.access.ExceptionTranslationFilter@2e54e760]
+2017-07-03 11:37:28.080  INFO 1616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-03 11:37:28.340  INFO 1616 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-03 11:37:28.618  INFO 1616 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2017-07-03 11:37:28.653  INFO 1616 --- [restartedMain] com.example.ProjectApplication           : Started ProjectApplication in 20.014 seconds (JVM running for 20.969)
+2017-07-03 11:37:34.321  INFO 1616 --- [http-nio-9000-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-03 11:37:34.328  INFO 1616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-03 11:37:34.398  INFO 1616 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
