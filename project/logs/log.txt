@@ -2661,3 +2661,279 @@ Using default security password: 1025fde2-5c0e-440a-8c94-a11a4c6aad90
 2017-07-03 09:26:13.167  INFO 8320 --- [http-nio-8000-exec-3] com.example.controller.AuthController    : User:com.example.model.User@1c152a88
 2017-07-03 09:26:13.182  INFO 8320 --- [http-nio-8000-exec-3] com.example.controller.AuthController    : Login Success
 2017-07-03 09:26:13.209  INFO 8320 --- [http-nio-8000-exec-10] com.example.controller.BookController    : Entering list
+2017-07-03 11:10:28.374  INFO 6376 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 6376 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:10:28.401  INFO 6376 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:10:28.573  INFO 6376 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1aa9cfe2: startup date [Mon Jul 03 11:10:28 IST 2017]; root of context hierarchy
+2017-07-03 11:10:36.737  INFO 6376 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-07-03 11:10:36.854  INFO 6376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:10:36.856  INFO 6376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:10:37.434  INFO 6376 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:10:37.444  INFO 6376 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:10:37.454  INFO 6376 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8889 ms
+2017-07-03 11:10:37.908  INFO 6376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:10:37.909  INFO 6376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:10:37.909  INFO 6376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:10:37.918  INFO 6376 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:10:37.920  INFO 6376 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:10:37.921  INFO 6376 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:10:38.471  INFO 6376 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:10:41.022  WARN 6376 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2017-07-03 11:10:41.033  INFO 6376 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-03 11:10:41.161  INFO 6376 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-03 11:10:41.182 ERROR 6376 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.example.ProjectApplication.main(ProjectApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:302) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnection(DriverDataSource.java:261) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 23 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2192) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:299) ~[flyway-core-3.2.1.jar:na]
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_92]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_92]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	... 43 common frames omitted
+
+2017-07-03 11:21:53.193  INFO 7628 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 7628 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:21:53.196  INFO 7628 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:21:53.318  INFO 7628 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a5c08f: startup date [Mon Jul 03 11:21:53 IST 2017]; root of context hierarchy
+2017-07-03 11:21:59.013  INFO 7628 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-03 11:21:59.129  INFO 7628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:21:59.131  INFO 7628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:21:59.732  INFO 7628 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:21:59.743  INFO 7628 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:21:59.754  INFO 7628 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6443 ms
+2017-07-03 11:22:00.254  INFO 7628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:22:00.256  INFO 7628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:22:00.257  INFO 7628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:22:00.267  INFO 7628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:22:00.271  INFO 7628 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:22:00.271  INFO 7628 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:22:01.320  INFO 7628 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:22:04.264  WARN 7628 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2017-07-03 11:22:04.371  INFO 7628 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-03 11:22:04.483  INFO 7628 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-03 11:22:04.513 ERROR 7628 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.example.ProjectApplication.main(ProjectApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource (jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull) for user 'root': Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:302) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnection(DriverDataSource.java:261) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 23 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2192) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_92]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_92]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at org.flywaydb.core.internal.util.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:299) ~[flyway-core-3.2.1.jar:na]
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_92]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_92]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.42.jar:5.1.42]
+	... 43 common frames omitted
+
+2017-07-03 11:28:21.460  INFO 7236 --- [restartedMain] com.example.ProjectApplication           : Starting ProjectApplication on BSKN with PID 7236 (C:\Users\USER\Desktop\revature\final\final\project\target\classes started by USER in C:\Users\USER\Desktop\revature\final\final\project)
+2017-07-03 11:28:21.462  INFO 7236 --- [restartedMain] com.example.ProjectApplication           : No active profile set, falling back to default profiles: default
+2017-07-03 11:28:21.594  INFO 7236 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51f9c595: startup date [Mon Jul 03 11:28:21 IST 2017]; root of context hierarchy
+2017-07-03 11:28:27.250  INFO 7236 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-03 11:28:27.434  INFO 7236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-03 11:28:27.437  INFO 7236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-03 11:28:28.067  INFO 7236 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-07-03 11:28:28.084  INFO 7236 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-03 11:28:28.095  INFO 7236 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6508 ms
+2017-07-03 11:28:28.592  INFO 7236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-03 11:28:28.601  INFO 7236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-03 11:28:28.601  INFO 7236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-03 11:28:28.608  INFO 7236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-03 11:28:28.609  INFO 7236 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-03 11:28:28.610  INFO 7236 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-03 11:28:29.168  INFO 7236 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-03 11:28:29.902  INFO 7236 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/bookingsdb?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-03 11:28:30.062  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.083s)
+2017-07-03 11:28:30.394  INFO 7236 --- [restartedMain] o.f.c.i.metadatatable.MetaDataTableImpl  : Creating Metadata table: `bookingsdb`.`schema_version`
+2017-07-03 11:28:32.354  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `bookingsdb`: << Empty Schema >>
+2017-07-03 11:28:32.362  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookingsdb` to version 1 - create user
+2017-07-03 11:28:32.919  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookingsdb` to version 2 - create book
+2017-07-03 11:28:33.521  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookingsdb` to version 3 - create order
+2017-07-03 11:28:34.108  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookingsdb` to version 4 - create order items
+2017-07-03 11:28:34.576  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `bookingsdb` to version 5 - create role
+2017-07-03 11:28:35.138  INFO 7236 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema `bookingsdb` (execution time 00:04.745s).
+2017-07-03 11:28:36.680  INFO 7236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-03 11:28:37.013  INFO 7236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-03 11:28:38.893  INFO 7236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-03 11:28:38.980  INFO 7236 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-03 11:28:38.990  INFO 7236 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-03 11:28:39.216  INFO 7236 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-03 11:28:40.210  INFO 7236 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-07-03 11:28:42.238  INFO 7236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-03 11:28:44.628  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51f9c595: startup date [Mon Jul 03 11:28:21 IST 2017]; root of context hierarchy
+2017-07-03 11:28:44.922  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/register],methods=[POST]}" onto public java.lang.String com.example.controller.AuthController.register(com.example.form.RegistrationForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession) throws java.lang.Exception
+2017-07-03 11:28:44.934  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/logout],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.logout(javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.945  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/register],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.showRegsiter()
+2017-07-03 11:28:44.955  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/login],methods=[POST]}" onto public java.lang.String com.example.controller.AuthController.login(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.956  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth/login],methods=[GET]}" onto public java.lang.String com.example.controller.AuthController.login()
+2017-07-03 11:28:44.969  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books],methods=[GET]}" onto public java.lang.String com.example.controller.BookController.list(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.969  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/books/{id}],methods=[GET]}" onto public java.lang.String com.example.controller.BookController.show(java.lang.Long,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.971  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.controller.HomeController.showHome()
+2017-07-03 11:28:44.976  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.list(org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.978  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/save],methods=[POST]}" onto public java.lang.String com.example.controller.OrderController.save(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.979  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/updateStatus],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.updateStatus(java.lang.Long,java.lang.String)
+2017-07-03 11:28:44.979  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/myorders],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.myOrders(org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.980  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/cart],methods=[GET]}" onto public java.lang.String com.example.controller.OrderController.cart()
+2017-07-03 11:28:44.995  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/list],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.list(javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.996  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/remove],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.removeItemFromCart(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.996  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/addToCart],methods=[POST]}" onto public java.lang.String com.example.controller.OrderItemController.addToCart(java.lang.Long,java.lang.Integer,javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.997  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orderItems/emptycart],methods=[GET]}" onto public java.lang.String com.example.controller.OrderItemController.emptyCartid(javax.servlet.http.HttpSession)
+2017-07-03 11:28:44.999  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.list(javax.servlet.http.HttpSession)
+2017-07-03 11:28:45.000  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public java.lang.String com.example.controller.UserController.show(java.lang.Long,org.springframework.ui.ModelMap,javax.servlet.http.HttpSession)
+2017-07-03 11:28:45.005  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-03 11:28:45.006  INFO 7236 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-03 11:28:45.186  INFO 7236 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:28:45.187  INFO 7236 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:28:45.364  INFO 7236 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-03 11:28:46.129  INFO 7236 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 0752d5c4-b119-4896-b07e-fca055a2ff88
+
+2017-07-03 11:28:46.400  INFO 7236 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2017-07-03 11:28:46.638  INFO 7236 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@7ec56b24, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5332685, org.springframework.security.web.context.SecurityContextPersistenceFilter@729f389f, org.springframework.security.web.header.HeaderWriterFilter@63260bd9, org.springframework.security.web.csrf.CsrfFilter@17df2bca, org.springframework.security.web.authentication.logout.LogoutFilter@5d07c802, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fa5c056, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eb9d722, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6697a9f9, org.springframework.security.web.session.SessionManagementFilter@79ff95e6, org.springframework.security.web.access.ExceptionTranslationFilter@9fa8b92]
+2017-07-03 11:28:47.393  INFO 7236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-03 11:28:47.717  INFO 7236 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-03 11:28:49.920  INFO 7236 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9000 (http)
+2017-07-03 11:28:50.148  INFO 7236 --- [restartedMain] com.example.ProjectApplication           : Started ProjectApplication in 29.353 seconds (JVM running for 30.343)
+2017-07-03 11:29:21.174  INFO 7236 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-03 11:29:21.193  INFO 7236 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-03 11:29:21.265  INFO 7236 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
